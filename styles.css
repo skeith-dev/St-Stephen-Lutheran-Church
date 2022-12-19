@@ -1,0 +1,294 @@
+body {
+    background-color: #dad8ce;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    margin: 0 0.5rem;
+    padding: 0.5rem 2rem;
+    background-color: #632100;
+    border-radius: 10px;
+    height: 100%;
+    align-self: center;
+}
+
+main {
+    color: #344017;
+    margin: 1%;
+}
+
+nav {
+    margin: 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 2rem;
+    color: #f0efeb;
+    background-color: #344017;
+    border-radius: 10px;
+    width: 100%;
+}
+
+nav>a {
+    text-decoration: none;
+    margin: 1rem 1rem;
+}
+
+footer {
+    margin: 0 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: #f0efeb;
+    background-color: #344017;
+    border-radius: 10px;
+    width: 100%;
+}
+
+footer h3, footer div {
+    margin: 0.5rem 2rem;
+}
+
+footer img {
+    height: 3rem;
+}
+
+a {
+    color: inherit;
+}
+
+h2 {
+    text-align: center;
+}
+
+iframe {
+    border: #344017 solid 1px;
+    width: 24rem;
+    height: 16rem;
+    background-color: white;
+}
+
+embed {
+    width: 100%;
+    height: 80%;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+input[type=reset], [type=submit] {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #344017;
+    margin: 1rem 2rem 0 0;
+}
+
+/* ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== */
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+.card {
+    background-color: #f0efeb;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.icons {
+    width: 12rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #dad8ce;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery-pic {
+    width: 30%;
+    height: 100%;
+    margin: 0.5rem;
+}
+
+/* ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== */
+
+@media (min-width:1000px) {
+
+    .board {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+    }
+
+    #about-us {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    #calendar {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    #location {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    
+    #giving-payments {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    #music {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #youth {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #adults {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #support-groups {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #events {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+    }
+
+    #service-schedule {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;     
+    }
+
+    #livestream {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    #prayer-list-requests {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #worship-assistants {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #curriculum {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;     
+    }
+
+    #enrollment {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    #academic-calendar {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #gallery {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #partner-orgs {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #pledging {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #service-blog {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+}
